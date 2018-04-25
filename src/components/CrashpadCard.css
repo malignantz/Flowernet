@@ -1,0 +1,11 @@
+.card {
+  margin:5px;
+}
+
+.card:hover {
+  background-color:#fcfff4;
+}
+
+.margin {
+  margin: 0px 10px 0px 10px;
+}

@@ -1,0 +1,9 @@
+.DayPicker-Day--high {
+  color: white;
+  background-color: #ffc107;
+}
+
+.DayPicker-Day--low {
+  color: white;
+  background-color: #333;
+}
