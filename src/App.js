@@ -93,7 +93,7 @@ class App extends Component {
             <Button
               content="FAQ"
               onClick={() =>
-                window.open("http://crashpad.co/flowernet/faq.html", "_new")
+                window.open("faq.html", "_self")
               }
               circular
               color="blue"
