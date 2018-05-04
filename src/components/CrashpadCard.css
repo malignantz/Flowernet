@@ -1,9 +1,11 @@
 .card {
-  margin:5px;
+  margin: 20px 10px;
+  border: 2px solid lightcyan;
+  border-radius: 5px;
 }
 
 .card:hover {
-  background-color:#fcfff4;
+  background-color: #fcfff4;
 }
 
 .margin {

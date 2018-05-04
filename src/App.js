@@ -1,18 +1,10 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter } from "react-router";
+
 import CrashpadCard from "./components/CrashpadCard";
-import {
-  Segment,
-  Card,
-  Grid,
-  List,
-  Icon,
-  Button,
-  Modal,
-  Image
-} from "semantic-ui-react";
+
+import { Card, Grid, List, Button, Modal, Image } from "semantic-ui-react";
 import PAD_DATA from "./crashpaddata";
 import FacebookLogin from "react-facebook-login";
 import axios from "axios";
@@ -23,7 +15,9 @@ class App extends Component {
     this.state = {
       showSecretModal: false,
       secretData: false,
-      email: ""
+      email: "",
+      showFAQ: false,
+      showAgreement: false
     };
   }
 
@@ -67,19 +61,12 @@ class App extends Component {
   }
 
   render() {
-    const randoFunc = (event, allProps) => {
-      console.log(event, allProps);
-      console.log("Clicked");
-    };
-
     return (
       <div className="App">
         <div className="App-header">
           <div>
             <Image
-              src={
-                "https://flowernetsite.files.wordpress.com/2017/09/logo3.png"
-              }
+              src={"logo3.png"}
               height={160}
               centered
 
@@ -92,9 +79,7 @@ class App extends Component {
           <div>
             <Button
               content="FAQ"
-              onClick={() =>
-                window.open("faq.html", "_self")
-              }
+              onClick={() => window.open("faq.html", "_self")}
               circular
               color="blue"
             />
